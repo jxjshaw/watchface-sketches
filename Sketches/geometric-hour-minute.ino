@@ -58,7 +58,7 @@ void loop() {
 
 
 
-  fillArc(120, 120, 0, mm + 2, 120, 120, 90, 0x7BEF);
+  fillArc(120, 120, 0, mm + 1, 120, 120, 90, 0x7BEF);
 
   // if two digits then less x
   tft.drawNumber(hh, 106, 108, 4);  
@@ -73,7 +73,8 @@ void loop() {
   if (inc > 59) inc = 0;
 
   // this might be the wrong value
-  if (mm > 58 ) {  
+  if (mm > 59 ) {  
+    // && ss > 58
       fillArc(120, 120, 0, 60, 120, 120, 103, TFT_BLACK);
     }
   
