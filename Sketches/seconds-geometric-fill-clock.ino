@@ -63,32 +63,18 @@ void loop() {
 
 
 
-  // Continuous elliptical arc drawing
-  //fillArc(120, 120, inc * 6, 1, 114, 114, 4, rainbow(col));
-
-  // Continuous segmented (inc*2) elliptical arc drawing
-  //fillArc(120, 120, ((inc * 2) % 60) * 6, 1, 100, 100, 8, rainbow(col));
-
-  // Circle drawing using arc with arc width = radius
-  //fillArc(120, 120, inc * 6, 1, 16, 16, 16, rainbow(col));
-
-  //fillArc(120, 120, inc * 6, 1, 120, 120, 120, rainbow(col));
-
-  fillArc(120, 120, 0, ss, 120, 120, 103, 0x7BEF);
+  fillArc(120, 120, 0, ss + 2, 120, 120, 103, 0x7BEF);
 
   fillArc(120, 120, 0, 60, 8, 8, 2, TFT_WHITE); }
 
-  
 
   inc++;
   col += 1;
   if (col > 191) col = 0;
   if (inc > 59) inc = 0;
 
-  if (ss > 58 ) {
-    
+  if (ss > 58 ) {  
       fillArc(120, 120, 0, 60, 120, 120, 103, TFT_BLACK);
-    
     }
   
 
